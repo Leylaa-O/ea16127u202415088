@@ -4,7 +4,7 @@ import {BaseEndpoint}    from "../../shared/infraestructure/base-endpoint.js";
 const collectionTypeEndpointPath= import.meta.env.VITE_COLLECTION_TYPE_PATH;
 const coinsEndpointPath = import.meta.env.VITE_COINS_ENDPOINT_PATH;
 
-export class PublishingApi extends BaseApi {
+export class CoinsApi extends BaseApi {
     #collectionTypeEndpoint;
     #coinsEndpoint;
 

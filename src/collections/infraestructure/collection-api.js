@@ -1,28 +1,28 @@
 import {BaseApi} from "../../shared/infraestructure/base-api.js";
 import {BaseEndpoint}    from "../../shared/infraestructure/base-endpoint.js";
 
-const collectionEndpointPath= import.meta.env.VITE_COLLECTION_TYPE_PATH;
-const historicalObjectsPath = import.meta.env.VITE_COINS_ENDPOINT_PATH;
+const collectionEndpointPath= import.meta.env.VITE_COLLECTION_PATH;
+const historicalObjectsPath = import.meta.env.VITE_HISTORICALOBJECTS_ENDPOINT_PATH;
 
-export class PublishingApi extends BaseApi {
-    #collectionTypeEndpoint;
-    #coinsEndpoint;
+export class CollectionApi extends BaseApi {
+    #collectionEndpoint;
+    #historicalObjectsEndpoint;
 
     constructor(){
         super();
-        this.#collectionTypeEndpoint = new BaseEndpoint(this, collectionTypeEndpointPath);
-        this.#coinsEndpoint = new BaseEndpoint(this, coinsEndpointPath);
+        this.#collectionEndpoint = new BaseEndpoint(this, collectionEndpointPath);
+        this.#historicalObjectsEndpoint = new BaseEndpoint(this, historicalObjectsPath);
     }
-    getCollectionType(){
-        return this.#collectionTypeEndpoint.getAll();
+    getCollection(){
+        return this.#collectionEndpoint.getAll();
     }
-    getCoins(){
-        return this.#coinsEndpoint.getAll();
+    getHistoricalObjects(){
+        return this.#historicalObjectsEndpoint.getAll();
     }
     getCollectionTypeById(id){
-        return this.#collectionTypeEndpoint.getById(id);
+        return this.#collectionEndpoint.getById(id);
     }
-    getCoinsById(id){
-        return this.#coinsEndpoint.getById(id);
+    getHistoricalObjectsById(id){
+        return this.#historicalObjectsEndpoint.getById(id);
     }
 }

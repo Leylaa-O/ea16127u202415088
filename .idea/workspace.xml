@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac3b4c64-69b8-4750-8962-5a5fea97e42d" name="Changes" comment="" />
+    <list default="true" id="ac3b4c64-69b8-4750-8962-5a5fea97e42d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/collections/application/collection.store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collections/presentation/views/collection-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collections/presentation/views/historical-objects-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coins/application/coins.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/coins/application/coins.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coins/infraestructure/coins-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/coins/infraestructure/coins-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collections/infraestructure/collection-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/infraestructure/collection-api.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1778292711294</updated>
       <workItem from="1790814016742" duration="404000" />
-      <workItem from="1791806737478" duration="7622000" />
+      <workItem from="1791806737478" duration="8585000" />
     </task>
     <servers />
   </component>

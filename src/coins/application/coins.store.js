@@ -1,11 +1,10 @@
 import {computed, ref} from "vue";
-import {PublishingApi} from "../infraestructure/coins-api.js";
+import {CoinsApi} from "../infraestructure/coins-api.js";
 import {CoinAssembler} from "../infraestructure/coin.assembler.js";
-import {TutorialAssembler} from "../infrastructure/tutorial.assembler.js";
 import {defineStore} from "pinia";
 import {CollectionTypeAssembler} from "../infraestructure/collection-type.assembler.js";
 
-const publishingApi = new PublishingApi();
+const coinsApi = new CoinsApi();
 
 const useCoinStore = defineStore('coin',
     ()=>{
@@ -19,7 +18,7 @@ const useCoinStore = defineStore('coin',
         const coinsLoaded = ref(false);
 
         function fetchCollectionType(){
-            publishingApi.getCollectionType().then(response => {
+            coinsApi.getCollectionType().then(response => {
                 collectionType.value = CollectionTypeAssembler.toEntitiesFromResponse(response);
                 collectionTypeLoaded.value = true;
                 console.log(collectionType.value);
@@ -29,8 +28,8 @@ const useCoinStore = defineStore('coin',
             });
         }
         function fetchCoins(){
-            publishingApi.getCoins().then(response => {
-                coins.value = TutorialAssembler.toEntitiesFromResponse(response);
+            coinsApi.getCoins().then(response => {
+                coins.value = CoinAssembler.toEntitiesFromResponse(response);
                 coinsLoaded.value = true;
                 console.log(coins.value);
                 console.log(coinsLoaded.value);
