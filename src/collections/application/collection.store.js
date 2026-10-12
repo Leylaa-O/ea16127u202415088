@@ -37,6 +37,11 @@ const useCollectionStore = defineStore('collection',
                 errors.value.push(error);
             })
         }
+        function getCollectionsById(id) {
+            let idNum = parseInt(id);
+            return collection.value.find(category => category["id"] === idNum);
+        }
+
         return {
             collection: collection,
             historicalObjects: historicalObjects,
@@ -46,5 +51,6 @@ const useCollectionStore = defineStore('collection',
             fetchCollection: fetchCollection,
             fetchHistoricalObjects: fetchHistoricalObjects,};
     }
+
 )
 export default useCollectionStore;

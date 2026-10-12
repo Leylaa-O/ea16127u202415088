@@ -14,7 +14,7 @@ const items =[
   {label : 'option.home', to:'/home'},
   {label : 'option.about', to:'/about'},
   {label : 'option.coins', to:'/historicalobjects'},
-  {label : 'option.collections', to:'/colections'},
+  {label : 'option.collections', to:'/collections'},
 ];
 </script>
 <template>

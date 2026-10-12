@@ -36,9 +36,6 @@ onMounted(()=>{
       <pv-column field="id" :header="t('collections.id')"  sortable/>
       <pv-column field="title" :header="t('collections.title')" sortable/>
       <pv-column field="summary" :header="t('collections.summary')" sortable/>
-      <pv-column field="categoryId" :header="t('collections.category-id')" sortable/>
-      <pv-column :header="t('collections.actions')">
-      </pv-column>
     </pv-data-table>
     <div v-if="errors" class="p-error">
       {{t('errors.ocurred')}}:

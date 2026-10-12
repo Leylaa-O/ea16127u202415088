@@ -1,0 +1,40 @@
+{
+  "option": {
+    "home": "Home",
+    "about": "About",
+    "collections": "Collections",
+    "tutorials": "Tutorials"
+  },
+  "authoring-phrase": {
+    "intro": "Made with",
+    "use": "using",
+    "author": "by {brand} Developer Team"
+  },
+  "about": {
+    "title": "About Us",
+    "content": "The ANA helps people discover and explore the world of money through its vast array of educational programs including its museum, library, \nconventions, seminars, publications and outreach programs"
+  },
+  "home": {
+    "title": "Home",
+    "content": "Museum Edward C Rochette."
+  },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The path {unavailable-route} is not available.",
+    "go-home": "Go Home"
+  },
+  "collections": {
+    "title": "Collections",
+    "id": "ID",
+    "name": "Name"
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "id": "ID",
+    "summary": "Summary",
+    "collection-id": "Collection ID"
+  },
+  "errors": {
+    "occurred": "Errors occurred"
+  }
+}

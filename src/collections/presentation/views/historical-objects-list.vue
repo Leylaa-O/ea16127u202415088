@@ -36,10 +36,9 @@ onMounted(()=>{
                    striped-rows>
       <pv-column field="id" :header="t('historicalObjects.id')"  sortable/>
       <pv-column field="title" :header="t('historicalObjects.title')" sortable/>
-      <pv-column field="summary" :header="t('historicalObjects.summary')" sortable/>
-      <pv-column field="categoryId" :header="t('historicalObjects.category-id')" sortable/>
-      <pv-column :header="t('historicalObjects.actions')">
-      </pv-column>
+      <pv-column field="price" :header="t('historicalObjects.price')" sortable/>
+      <pv-column field="size" :header="t('collections.size')" sortable/>
+
     </pv-data-table>
     <div v-if="errors" class="p-error">
       {{t('errors.ocurred')}}:

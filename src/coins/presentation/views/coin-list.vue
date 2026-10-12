@@ -35,10 +35,6 @@ onMounted(()=>{
                    striped-rows>
       <pv-column field="id" :header="t('coins.id')"  sortable/>
       <pv-column field="title" :header="t('coins.title')" sortable/>
-      <pv-column field="summary" :header="t('coins.summary')" sortable/>
-      <pv-column field="categoryId" :header="t('coins.category-id')" sortable/>
-      <pv-column :header="t('coins.actions')">
-      </pv-column>
     </pv-data-table>
     <div v-if="errors" class="p-error">
       {{t('errors.ocurred')}}:
